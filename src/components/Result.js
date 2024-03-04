@@ -16,9 +16,8 @@ const Result = () => {
         return "DRAW"
     }
     const newGame=()=>{
-        dispatch(resetStats("compWins"));
-        dispatch(resetStats("playerWins"));
-    }
+        dispatch(resetStats());
+        }
     return (
         <div className={'playerForm'}>
             <h1 className={'readyForWar'}>{getResult()}</h1>
