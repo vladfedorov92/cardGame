@@ -20,11 +20,11 @@ const gameSlice = createSlice({
         setPlayerWins: (state, action) => {
             state.playerWins += action.payload;
         },
-        resetStats: (state, action) => {
+        resetStats: (state) => {
             state.playerWins = 0;
             state.compWins = 0;
-        },
-    },
+        }
+    }
 });
 export const {setCompWins, setPlayerWins, resetStats } = gameSlice.actions;
 export const gameReducer = gameSlice.reducer;

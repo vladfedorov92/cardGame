@@ -10,8 +10,8 @@ const playerSlice = createSlice({
     reducers: {
         changePlayerName: (state, action) => {
             state.name = action.payload ? action.payload : state.name;
-        },
-    },
+        }
+    }
 });
 export const { changePlayerName } = playerSlice.actions;
 export const playerReducer = playerSlice.reducer;

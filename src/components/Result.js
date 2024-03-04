@@ -10,24 +10,24 @@ const Result = () => {
     const dispatch = useDispatch();
     const getResult = () => {
         if(compWins > playerWins)
-            return "You LOSE!"
+            return "You LOSE!";
         if(compWins < playerWins)
-            return "You WIN!"
-        return "DRAW"
+            return "You WIN!";
+        return "DRAW";
     }
-    const newGame=()=>{
+    const newGame = ()=>{
         dispatch(resetStats());
         }
     return (
-        <div className={'playerForm'}>
-            <h1 className={'readyForWar'}>{getResult()}</h1>
-            <h2 className={'readyForWar small'}> Comp {compWins} : {name} {playerWins} </h2>
-            <Link to={"/game"} onClick={()=>newGame()}>
-                <button className={'startButton'}>Again?
+        <div className = {'playerForm'}>
+            <h1 className = {'readyForWar'}>{getResult()}</h1>
+            <h2 className = {'readyForWar small'}>Comp {compWins} : {name} {playerWins} </h2>
+            <Link to = {"/game"} onClick={ ()=> newGame() }>
+                <button className = {'startButton'} >Again?
                 </button>
             </Link>
-            <Link to={"/Start"} onClick={()=>newGame()}>
-                <button className={'startButton'}>New Player
+            <Link to = {"/Start"} onClick={ ()=> newGame() }>
+                <button className = {'startButton'} >New Player
                 </button>
             </Link>
         </div>

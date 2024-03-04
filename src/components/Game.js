@@ -45,16 +45,16 @@ const Game = () => {
     }
     return (
         <div>
-            <h1 className={'players computer'}>Computer</h1>
-            <div className={'playerDeck'}>
-                <img src={compCard.src} alt=""/>
+            <h1 className = {'players computer'}>Computer</h1>
+            <div className = {'playerDeck'}>
+                <img src = {compCard.src} alt=""/>
             </div>
-            <h1 className={'players you'}>{name}</h1>
-            <div className={'playerDeck'}>
-                <img src={playerCard.src} alt=""/>
+            <h1 className = {'players you'}>{name}</h1>
+            <div className = {'playerDeck'}>
+                <img src = {playerCard.src} alt = ""/>
             </div>
-            <button className={'ingameButton'}
-                    onClick={() => handleClickNext()}>Next
+            <button className = {'ingameButton'}
+                    onClick = { () => handleClickNext()}>Next
             </button>
         </div>
     );
